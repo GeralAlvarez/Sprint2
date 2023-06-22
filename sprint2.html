@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Formulario</title>
+    <link rel="stylesheet" href="sprint2.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM"
+      crossorigin="anonymous"
+    />
+  </head>
+  <body>
+    <main class="vh-100">
+      <div class="bg-image w-100">
+        <img
+          src="images/bg-main-desktop.png"
+          alt="desktop"
+          class="d-none d-md-inline-block vh-100 mw-100"
+        />
+        <img
+          src="images/bg-main-mobile.png"
+          alt="mobile"
+          class="d-inline-block d-md-none w-100"
+        />
+      </div>
+      <div class="container h-100">
+        <div class="row h-100 align-items-md-center align-items-start justify-content-center">
+          <div class="col-8 col-md-6 col-sm-9 align-self-center">
+            <div class="tarjetas d-flex flex-column">
+              <div class="frente-tarjeta order-second order-md-first position-relative mb-0 mb-md-5">
+                <img
+                  src="images/bg-card-front.png"
+                  alt="frente tarjeta"
+                  class="mw-100"
+                />
+                <div class="logo-tarjeta">
+                  <img src="images/card-logo.svg" alt="logo tarjeta" />
+                </div>
+                <p class="numero-tarjeta text-white">0000 0000 0000 0000</p>
+                <p class="nombre-tarjeta text-white">JANE APPLESEED</p>
+                <p class="fecha text-white">
+                  <span class="mes">00</span>/<span class="año">00</span>
+                </p>
+              </div>
+              <div class="fondo-tarjeta order-first order-md-second position-relative ">
+                <img
+                  src="images/bg-card-back.png"
+                  alt="fondo tarjeta"
+                  class="mw-100"
+                />
+              </div>
+            </div>
+          </div>
+          <div class="col-12 col-md-4 col-sm-12 offset-xl-1 offset-lg-2 offset-md-2 offset-xxl-0">
+            <form class="form">
+              <label>CARDHOLDER NAME</label>
+              <input
+                class="border"
+                type="text"
+                name="Cardholder"
+                id="cardholder-name"
+                placeholder="e.g Jane Appleseed"
+              />
+              <label>CARD NUMBER</label>
+              <input
+                class="border"
+                type="text"
+                name="cardnumber"
+                id="cardholder-number"
+                placeholder="e.g 1234 5678 9123 0000"
+                />
+              <div class="d-flex justify-content-between">
+                <label id="exp-date">EXP. DATE (MM/YY)</label>
+                <label class="cvc">CVC</label>
+              </div>
+              <div class="d-flex justify-content-start">
+                <input
+                  class="border "
+                  type="text"
+                  name="month"
+                  id="mes"
+                  placeholder="MM"
+                  maxlength="2"
+                  style="width: 80px"
+                />
+                <input
+                  class="border"
+                  type="text"
+                  name="year"
+                  id="año"
+                  placeholder="YY"
+                  maxlength="2"
+                  style="width: 80px"
+                />
+                  <input
+                    class="border"
+                    type="text"
+                    name="cvc"
+                    id="cvc"
+                    placeholder="e.g 123"
+                    maxlength="3"
+                    style="width: 180px"
+                  />
+              </div>
+              <button type="button" class="submit-btn w-100">Confirm</button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>
